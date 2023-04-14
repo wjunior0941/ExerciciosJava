@@ -1,0 +1,48 @@
+package wj.exercicioswhileudemy;
+import java.util.Scanner;
+
+public class Exercicios {
+
+	public static void main(String[] args) {
+		//EX.01:
+		/*Scanner sc = new Scanner(System.in);
+		System.out.println("Digite a senha: ");
+		int senha;
+		
+		n = sc.nextInt();
+		
+		while (senha != 2002) {
+			System.out.println("Senha incorreta!");
+			n = sc.nextInt();
+		}
+		System.out.println("Acesso permitido!");
+		sc.close();*/
+		
+		//EX.03:
+		Scanner sc = new Scanner(System.in);
+		int alcool=0;
+		int gasolina=0;
+		int diesel=0;
+		
+		int tipo = sc.nextInt();
+		System.out.println("Qual o código?");
+		
+		
+		while(tipo != 4) {
+			if (tipo == 1) {
+				alcool++;
+				System.out.println("Àlcool");
+			} else if (tipo == 2) {
+				gasolina++;
+				System.out.println("Gasolina");
+			} else if (tipo == 3) {
+				diesel++;
+				System.out.println("Diesel");
+			} else {
+				System.out.println(" ");
+			}
+			System.out.println("MUITO OBRIGADO!");
+		}
+	}
+
+}
